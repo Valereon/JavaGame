@@ -63,23 +63,6 @@ public class Inventory {
     public static List<String> tempType = new ArrayList<String>();
     public static List<String> tempDurabilty = new ArrayList<String>();
     public static List<String> tempMaxDurabilty = new ArrayList<String>();
-    
-
-    
-    
-    
-    
-
-    
-
-
-
-    public static void main(String[] args){
-        CSVIO.main("R",10,30,10076,6,4,5,300,3000);
-        CSVIO.chestParseIn(args);
-        Chest.main(args);
-
-    }
 
 }
 

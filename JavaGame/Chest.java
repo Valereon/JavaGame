@@ -22,9 +22,10 @@ public class Chest {
     }
     
     public static void disp(String[] args){
+        
         String InvLeftAlignFormat = "|%-33s |%-8d|%-9d|%-7d|%-11s|";
         String ChestLeftAlignFormat = "%-12s |%-33s |%-8d|%-9d|%-7d|%-11s|%n";
-        String BottomChestAlign = "+----------------------------------+--------+---------+-------+-----------+%-12s+----------------------------------+--------+---------+-------+-----------+%n";
+        String BottomChestAlign = "%-87s +----------------------------------+--------+---------+-------+-----------+%n";
         Boolean hasPrinted = false;
         System.out.format("+-------------------------------------------------------------------------+             +-------------------------------------------------------------------------+%n");
         System.out.format("|Inventory                                                                |             |Chest                                                                    |%n");
@@ -49,7 +50,7 @@ public class Chest {
                 
             }
             
-            System.out.format(ChestLeftAlignFormat, "", i + "." + Inventory.mods[Integer.valueOf(Inventory.chestMod.get(i))] + " " + Inventory.tiers[Integer.valueOf(Inventory.chestTier.get(i))] + " " + Inventory.items[Integer.valueOf(Inventory.chestType.get(i))] , Integer.valueOf(Inventory.chestWeight.get(i)), Integer.valueOf(Inventory.chestDmgDef.get(i)), Integer.valueOf(Inventory.chestValue.get(i)), Integer.valueOf(Inventory.chestDurabilty.get(i)) + "/" + Integer.valueOf(Inventory.chestMaxDurabilty.get(i)));
+            System.out.format(ChestLeftAlignFormat, "",  i + "." + Inventory.mods[Integer.valueOf(Inventory.chestMod.get(i))] + " " + Inventory.tiers[Integer.valueOf(Inventory.chestTier.get(i))] + " " + Inventory.items[Integer.valueOf(Inventory.chestType.get(i))] , Integer.valueOf(Inventory.chestWeight.get(i)), Integer.valueOf(Inventory.chestDmgDef.get(i)), Integer.valueOf(Inventory.chestValue.get(i)), Integer.valueOf(Inventory.chestDurabilty.get(i)) + "/" + Integer.valueOf(Inventory.chestMaxDurabilty.get(i)));
           
         }
         if(Inventory.weight.size() == Inventory.chestWeight.size()){

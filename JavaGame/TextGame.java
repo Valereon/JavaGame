@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class TextGame {
 
     public static void main(String[] args) {
-		Inventory.main(args);
+		CSVIO.main("R",10,30,10076,6,4,5,300,3000);
+        CSVIO.chestParseIn(args);
 		TextGame.preShack(args);
 
     }

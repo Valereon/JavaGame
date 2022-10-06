@@ -1,2 +1,2 @@
 # JavaGame
- java game i made in my free time
+a java text adventure game that i am making in my free time
