@@ -1,0 +1,10 @@
+{
+	"Items": [{
+		"Name": "iron_sword",
+		"RequiredLevel": "1",
+		"RequiredMaterials": [{
+			"iron_ingot": "2",
+			"iron_ingot2": "5"
+		}]
+	}]
+}
