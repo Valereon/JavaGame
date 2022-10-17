@@ -1,10 +1,15 @@
-{
-	"Items": [{
-		"Name": "iron_sword",
-		"RequiredLevel": "1",
-		"RequiredMaterials": [{
-			"iron_ingot": "2",
-			"iron_ingot2": "5"
-		}]
-	}]
-}
+[{
+	"Name" : "iron_sword",
+	"RequiredLevel" : 1,
+	"RequiredMaterials" : [
+		{
+			"MaterialName" : "iron_ingot",
+			"Amount" : 2
+		},
+		{
+			"MaterialName" : "stick",
+			"Amount" : 1
+		}
+	]
+
+}]

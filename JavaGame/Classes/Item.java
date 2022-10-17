@@ -16,13 +16,13 @@ public class Item {
     private int durability;
     private int maxDurability;
     private int value;
-    private Random rand = new Random();
+    private static Random rand = new Random();
 
-    public static Item createItem(){
+    public static Item createItem(tiers tier, types type){
         Item newItem = new Item();
-        newItem.type = types.bat;
-        newItem.tier = tiers.wood;
-        newItem.modifer = modifers.blunt;
+        newItem.type = type;
+        newItem.tier = tier;
+        newItem.modifer = modifers.values()[rand.nextInt(modifers.values().length)];
         newItem.damage = 1;
         newItem.durability = 10;
         newItem.maxDurability = 10;

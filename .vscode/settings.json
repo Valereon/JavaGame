@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "/home/max/Documents/GitHub/JavaGame/Dependencies/gson-2.8.2.jar"
+        ]
+    }
+}
